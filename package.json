@@ -1,0 +1,17 @@
+{
+    "name": "k6-testing",
+    "version": "1.0.0",
+    "description": "Automatización de pruebas con K6 y configuración de entorno",
+    "scripts": {
+        "setup": "node setup.js",
+        "test": "npx dotenv -e .env -- k6 run"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.10"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "dotenv-cli": "^8.0.0"
+    }
+}
