@@ -69,7 +69,7 @@ export default function () {
     const isValid = validateAndCompare(responseJson.PolicyDetail, expectedSchema.PolicyDetail);
 
     if (isValid) {
-        console.log('✅ Validación exitosa: La estructura coincide con el esquema esperado.');
+        console.log('✅ Validación exitosa: La estructura  de PolicyDetail coincide con el esquema esperado.');
     } else {
         console.error('❌ Error: La estructura de PolicyDetail no es válida.');
     }

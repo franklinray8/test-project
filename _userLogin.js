@@ -154,8 +154,8 @@ export default function () {
     const isValid = validateAndCompare(responseJson.UserHomeData, expectedSchema.UserHomeData);
 
     if (isValid) {
-        console.log('✅ Validación exitosa: La estructura coincide con el esquema esperado.');
+        console.log('✅ Validación exitosa: La estructura de UserLogin coincide con el esquema esperado.');
     } else {
-        console.error('❌ Error: La estructura de UserHomeData no es válida.');
+        console.error('❌ Error: La estructura de UserLogin no es válida.');
     }
 }
