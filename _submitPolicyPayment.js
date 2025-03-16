@@ -23,7 +23,8 @@ const expectedSubmitPolicyPaymentSchema = {
 };
 
 
-//Función para validar la respuesta  y comparar
+
+//Funcion para validar y comparar la respuesta
 export default function () {
     let { res, responseJson } = submitPolicyPayment(loginPayload);
     console.log('🔍 Datos que se envían a la API:', loginPayload);

@@ -18,7 +18,9 @@ const expectedBankAccountSchema = {
     CaseId: 'string'
   };
   
-//Función para validar la respuesta  y comparar
+
+
+//Funcion para validar y comparar la respuesta
 export default function () {
     let { res, responseJson } = userAddBankAccountInfo(loginPayload);
     console.log('🔍 Datos que se envían a la API:', loginPayload);

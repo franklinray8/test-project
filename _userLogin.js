@@ -142,6 +142,7 @@ const expectedSchema = {
   }
 };
 
+
 //Funcion para validar y comparar la respuesta
 export default function () {
     let { res, responseJson } = loginUser(loginPayload);

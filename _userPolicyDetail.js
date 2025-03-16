@@ -57,6 +57,9 @@ const loginPayload = JSON.stringify({
     }
   };
 
+
+  
+//Funcion para validar y comparar la respuesta
 export default function () {
     let { res, responseJson } = userPolicyDetail(loginPayload);
     console.log('🔍 Datos que se envían a la API:', loginPayload);

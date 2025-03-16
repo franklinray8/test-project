@@ -1,4 +1,5 @@
-// Función para validar la estructura JSON
+// Función para validar la estructura JSON la respues86+++
+
 export function validateAndCompare(responseData, expectedSchema) {
     function checkStructure(obj, schema, path = '') {
         let isValid = true;
