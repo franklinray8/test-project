@@ -1,4 +1,4 @@
-// Función para validar la estructura JSON la respues86+++
+// Función para validar la estructura JSON response
 
 export function validateAndCompare(responseData, expectedSchema) {
     function checkStructure(obj, schema, path = '') {
