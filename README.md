@@ -28,3 +28,10 @@ Antes de comenzar, asegúrate de tener instalado:
 1️⃣ Clona este repositorio en tu máquina local:
    ```bash
    git clone https://github.com/franklinray8/test-project.git
+
+   
+   
+   2️⃣ Instala las dependencias necesarias:
+        npm install
+
+        

@@ -32,7 +32,7 @@ export default function () {
     const isValid = validateAndCompare(responseJson, expectedBankAccountSchema);
 
     if (isValid) {
-        console.log('✅ Validación exitosa: La estructura coincide con el esquema esperado.');
+        console.log('✅ Validación exitosa: La estructura de UserAddBankAccountInfo coincide con el esquema esperado.');
     } else {
         console.error('❌ Error: La estructura de UserAddBankAccountInfo no es válida.');
     }

@@ -171,3 +171,24 @@ export function getPolicyBalanceValues(loginPayload) {
 
     return { res, responseJson };
 }
+
+
+//Funcion para el login de policySubmission
+export function policySubmission(loginPayload) {
+    console.log(`🔍 Iniciando login en ${BASE_URL}/PolicySubmission`);
+
+    let res = http.post(`${BASE_URL}/PolicySubmission`, loginPayload, HEADERS);
+    let responseJson;
+
+    try {
+        responseJson = JSON.parse(res.body);
+    } catch (e) {
+        console.error('❌ Error al parsear JSON:', e);
+        return null;
+    }
+
+    console.log(`🔹 Código de respuesta: ${res.status}`);
+    console.log(`🔹 Cuerpo de respuesta: ${res.body}`);
+
+    return { res, responseJson };
+}

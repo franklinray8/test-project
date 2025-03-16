@@ -33,9 +33,9 @@ const expectedBalanceInquirySchema = {
         const isValid = validateAndCompare(responseJson, expectedBalanceInquirySchema);
     
         if (isValid) {
-            console.log('✅ Validación exitosa: La estructura coincide con el esquema esperado.');
+            console.log('✅ Validación exitosa: La estructura de GetPolicyBalanceValues coincide con el esquema esperado.');
         } else {
-            console.error('❌ Error: La estructura de PolicyDetail no es válida.');
+            console.error('❌ Error: La estructura de GetPolicyBalanceValues no es válida.');
         }
     }
     

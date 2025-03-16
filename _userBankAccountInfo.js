@@ -40,8 +40,8 @@ export default function () {
   const isValid = validateAndCompare(responseJson.UserBankAccountInfo, expectedSchema.UserBankAccountInfo);
 
   if (isValid) {
-    console.log('✅ Validación exitosa: La estructura coincide con el esquema esperado.');
+    console.log('✅ Validación exitosa: La estructura de UserBankAccountInfo coincide con el esquema esperado.');
   } else {
-    console.error('❌ Error: La estructura de UserHomeData no es válida.');
+    console.error('❌ Error: La estructura de UserBankAccountInfo no es válida.');
   }
 }
