@@ -2,12 +2,14 @@ import { getPolicyBalanceValues } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
 
-// Cuerpo de la solicitud
+//body
 const loginPayload = JSON.stringify({
     "EffectiveDate": __ENV.EFFECTIVE_DATE,
     "CaseId": __ENV.CASE_ID
 });
 
+
+//body response
 const expectedBalanceInquirySchema = {
     BalanceInquiryDate: 'string',
     Answer: 'string',

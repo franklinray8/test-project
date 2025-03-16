@@ -1,12 +1,13 @@
 import { userPolicyDetail } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-// Datos de solicitud
+//body
 const loginPayload = JSON.stringify({
     "PolicyId": __ENV.POLICY_ID,
     "UserId": __ENV.USER_ID
 });
 
+//body response
   const expectedSchema = {
     PolicyDetail: {
       Answer: 'string',
@@ -65,12 +66,12 @@ export default function () {
         return;
     }
 
-    console.log('🔍 Validando Data de PolicyDetail...');
+    console.log('🔍 Validando Data de UserPolicyDetail...');
     const isValid = validateAndCompare(responseJson.PolicyDetail, expectedSchema.PolicyDetail);
 
     if (isValid) {
-        console.log('✅ Validación exitosa: La estructura  de PolicyDetail coincide con el esquema esperado.');
+        console.log('✅ Validación exitosa: La estructura  de UserPolicyDetail coincide con el esquema esperado.');
     } else {
-        console.error('❌ Error: La estructura de PolicyDetail no es válida.');
+        console.error('❌ Error: La estructura de UserPolicyDetail no es válida.');
     }
 }

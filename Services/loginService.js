@@ -192,3 +192,24 @@ export function policySubmission(loginPayload) {
 
     return { res, responseJson };
 }
+
+//Funcion para el login de PolicyUpdateBeneficiaries
+export function policyUpdateBeneficiaries(loginPayload) {
+    console.log(`🔍 Iniciando login en ${BASE_URL}/PolicyUpdateBeneficiaries`);
+
+    let res = http.post(`${BASE_URL}/PolicyUpdateBeneficiaries`, loginPayload, HEADERS);
+    let responseJson;
+
+    try {
+        responseJson = JSON.parse(res.body);
+    } catch (e) {
+        console.error('❌ Error al parsear JSON:', e);
+        return null;
+    }
+
+    console.log(`🔹 Código de respuesta: ${res.status}`);
+    console.log(`🔹 Cuerpo de respuesta: ${res.body}`);
+
+    return { res, responseJson };
+}
+

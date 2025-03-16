@@ -1,6 +1,7 @@
 import { loginUser } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
+//body
 const loginPayload = JSON.stringify({
     "DocumentId": __ENV.DOCUMENT_ID,
     "DocumentType": __ENV.DOCUMENT_TYPE,
@@ -10,6 +11,8 @@ const loginPayload = JSON.stringify({
     "UserId": __ENV.USER_ID
 });
 
+
+//body response
 const expectedSchema = {
   UserHomeData: {
     Answer: 'string',

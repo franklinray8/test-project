@@ -1,7 +1,7 @@
 import { userAddBankAccountInfo } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-// Cuerpo de la solicitud
+// //body
 const loginPayload = JSON.stringify({
     "AccountId": __ENV.ACCOUNT_ID,
     "BankAccountNumber": __ENV.BANK_ACCOUNT_NUMBER,
@@ -9,7 +9,7 @@ const loginPayload = JSON.stringify({
     "BankId": __ENV.BANK_ID
 });
 
-
+//body response
 const expectedBankAccountSchema = {
     Answer: 'string',
     Message: 'string',

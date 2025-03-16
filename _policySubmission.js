@@ -1,6 +1,7 @@
 import { policySubmission } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
+//body
 const loginPayload = JSON.stringify({
   "PolicySubmission": {
       "SubmissionId": __ENV.SUBMISSION_ID,
@@ -74,6 +75,7 @@ const loginPayload = JSON.stringify({
   }
 });
 
+//body response
 const expectedSubmissionSchema = {
   Answer: 'string',
   Message: 'string',

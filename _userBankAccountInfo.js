@@ -1,11 +1,13 @@
 import { userBankAccountInfo } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-// Cuerpo de la solicitud
+//body
 const loginPayload = JSON.stringify({
   "AccountId": __ENV.ACCOUNT_ID_01,
 });
 
+
+//body response
 const expectedSchema = {
   UserBankAccountInfo: {
     Answer: 'string',

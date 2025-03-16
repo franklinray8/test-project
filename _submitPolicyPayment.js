@@ -1,7 +1,7 @@
 import { submitPolicyPayment } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-// Cuerpo de la solicitud
+//body
 const loginPayload = JSON.stringify({
         "CaseId": __ENV.CASE_ID,
         "ApplicationId": __ENV.APPLICATION_ID,
@@ -14,7 +14,7 @@ const loginPayload = JSON.stringify({
         "CreditCardType": __ENV.CREDIT_CARD_TYPE
 });
 
-
+//body response
 const expectedSubmitPolicyPaymentSchema = {
     Answer: 'string',
     Message: 'string',
