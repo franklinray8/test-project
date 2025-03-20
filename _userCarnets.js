@@ -3,8 +3,8 @@ import { validateAndCompare } from './Helpers/validations.js';
 
 // body
 const loginPayload = JSON.stringify({
-    "AccountId": __ENV.ACCOUNT_ID,
-    "PolicyId": __ENV.POLICY_ID
+    "AccountId": __ENV.ACCOUNT_ID_03,
+    "PolicyId": __ENV.POLICY_ID_01
 });
 
 

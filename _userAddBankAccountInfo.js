@@ -3,7 +3,7 @@ import { validateAndCompare } from './Helpers/validations.js';
 
 // //body
 const loginPayload = JSON.stringify({
-    "AccountId": __ENV.ACCOUNT_ID,
+    "AccountId": __ENV.ACCOUNT_ID_01,
     "BankAccountNumber": __ENV.BANK_ACCOUNT_NUMBER,
     "BankAccountType": __ENV.BANK_ACCOUNT_TYPE,
     "BankId": __ENV.BANK_ID

@@ -6,7 +6,7 @@ const loginPayload = JSON.stringify({
     "PolicyAccountsUpdate": {
         "ApplicationId": __ENV.APPLICATION_ID,
         "Accounts": [{
-            "AccountId": __ENV.ACCOUNT_ID,
+            "AccountId": __ENV.ACCOUNT_ID_02,
             "CivilStatus": __ENV.CIVIL_STATUS,
             "PersonEmail": __ENV.PERSON_EMAIL,
             "CellPhone": __ENV.CELL_PHONE,
