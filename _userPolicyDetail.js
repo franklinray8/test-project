@@ -1,7 +1,7 @@
 import { userPolicyDetail } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-//body
+//body request
 const loginPayload = JSON.stringify({
     "PolicyId": __ENV.POLICY_ID,
     "UserId": __ENV.USER_ID

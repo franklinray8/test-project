@@ -2,7 +2,7 @@ import { getPolicyBalanceValues } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
 
-//body
+//body request
 const loginPayload = JSON.stringify({
     "EffectiveDate": __ENV.EFFECTIVE_DATE,
     "CaseId": __ENV.CASE_ID

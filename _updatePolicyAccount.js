@@ -1,7 +1,7 @@
 import { updatePolicyAccount } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-//body
+//body request
 const loginPayload = JSON.stringify({
     "PolicyAccountsUpdate": {
         "ApplicationId": __ENV.APPLICATION_ID,

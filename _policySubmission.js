@@ -1,7 +1,7 @@
 import { policySubmission } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-//body
+//body request
 const loginPayload = JSON.stringify({
   "PolicySubmission": {
       "SubmissionId": __ENV.SUBMISSION_ID,

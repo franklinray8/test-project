@@ -1,7 +1,7 @@
 import { loginUser } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-//body
+//body request
 const loginPayload = JSON.stringify({
     "DocumentId": __ENV.DOCUMENT_ID,
     "DocumentType": __ENV.DOCUMENT_TYPE,

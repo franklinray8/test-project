@@ -1,7 +1,7 @@
 import { userCarnets } from './Services/loginService.js';
 import { validateAndCompare } from './Helpers/validations.js';
 
-// body
+// body request
 const loginPayload = JSON.stringify({
     "AccountId": __ENV.ACCOUNT_ID_03,
     "PolicyId": __ENV.POLICY_ID_01
